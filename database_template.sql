@@ -36,7 +36,7 @@ CREATE TABLE `area` (
   PRIMARY KEY (`areaID`),
   KEY `checklistIDarea_idx` (`checklistID`),
   CONSTRAINT `checklistIDarea` FOREIGN KEY (`checklistID`) REFERENCES `checklist` (`checklistID`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -50,7 +50,7 @@ CREATE TABLE `checklist` (
   `checklistID` int(70) unsigned NOT NULL AUTO_INCREMENT,
   `type` varchar(512) NOT NULL,
   PRIMARY KEY (`checklistID`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -110,7 +110,7 @@ CREATE TABLE `subtasks` (
   PRIMARY KEY (`subtaskID`),
   KEY `masterTaskID_idx` (`taskID`),
   CONSTRAINT `masterTaskID` FOREIGN KEY (`taskID`) REFERENCES `task` (`taskID`) ON DELETE CASCADE ON UPDATE CASCADE
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -133,7 +133,7 @@ CREATE TABLE `task` (
   KEY `checklistIDtask_idx` (`checklistID`),
   CONSTRAINT `AreaID` FOREIGN KEY (`areaID`) REFERENCES `area` (`areaID`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `checklistIDtask` FOREIGN KEY (`checklistID`) REFERENCES `checklist` (`checklistID`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=0 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
