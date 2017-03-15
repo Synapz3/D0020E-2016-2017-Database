@@ -1,0 +1,2 @@
+#!/bin/bash
+watch -n 4 touch uwsgi_config.ini

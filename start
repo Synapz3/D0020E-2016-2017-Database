@@ -1,0 +1,4 @@
+#!/bin/bash
+venv/bin/uwsgi --ini uwsgi_config.ini --catch-exceptions
+
+
