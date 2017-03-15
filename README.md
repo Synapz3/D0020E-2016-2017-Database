@@ -108,5 +108,5 @@ The server is now fully installed and runs by executing .start in the terminal.
 
 Now use git to clone the project.
 ```shell
-git clone 
+git clone https://github.com/Synapz3/D0020E-2016-2017-Database
 ```
