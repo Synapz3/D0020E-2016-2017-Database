@@ -103,10 +103,12 @@ def save(obj):
 # Remote connection to MariaDB
 If you want to enable remote connections to the database, follow [this guide](https://mariadb.com/kb/en/mariadb/configuring-mariadb-for-remote-client-access/). This could make it easier to manage the database and apply the tables remotely.
 
-# DONE!
+# Almost there!
+
 The server is now fully installed and runs by executing .start in the terminal.
 
 Now use git to clone the project.
 ```shell
-git clone https://github.com/Synapz3/D0020E-2016-2017-Database
+git clone https://github.com/Synapz3/D0020E-2016-2017-Database.git
 ```
+# DONE!
